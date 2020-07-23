@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="337.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+   <children>
+      <StackPane prefHeight="87.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="label" prefHeight="86.0" prefWidth="347.0" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </StackPane>
+      <HBox prefHeight="50.0" prefWidth="347.0" spacing="10.0">
+         <children>
+            <Button fx:id="dele" disable="true" mnemonicParsing="false" onAction="#del" prefHeight="45.0" prefWidth="75.0" text="X">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ac" disable="true" mnemonicParsing="false" onAction="#clean" prefHeight="45.0" prefWidth="75.0" text="AC" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="per" disable="true" mnemonicParsing="false" onAction="#percentage" prefHeight="45.0" prefWidth="75.0" text="\%" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="div" disable="true" mnemonicParsing="false" onAction="#operators" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: orange;" text="/" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="347.0" spacing="10.0">
+         <children>
+            <Button fx:id="n7" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="7" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="n8" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="8" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="n9" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="9" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="mul" disable="true" mnemonicParsing="false" onAction="#operators" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: orange;" text="*" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="347.0" spacing="10.0">
+         <children>
+            <Button fx:id="n4" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="4" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="n5" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="5" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="n6" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="6" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="minus" disable="true" mnemonicParsing="false" onAction="#operators" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: orange;" text="-" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="517.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="347.0" spacing="10.0">
+               <children>
+                  <Button fx:id="n1" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="1" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="n2" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="2" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="n3" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="3" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plus" disable="true" mnemonicParsing="false" onAction="#operators" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: orange;" text="+" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="387.0" spacing="10.0">
+         <children>
+            <Button fx:id="dott" disable="true" mnemonicParsing="false" onAction="#dot" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="." textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="n0" disable="true" mnemonicParsing="false" onAction="#numbers" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="eq" disable="true" mnemonicParsing="false" onAction="#operators" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: grey;" text="=" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="neg" disable="true" mnemonicParsing="false" onAction="#negative" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: orange;" text="+/-" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <RadioButton fx:id="ron" mnemonicParsing="false" onAction="#on" text="On" textFill="GREY">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="roff" mnemonicParsing="false" onAction="#off" prefHeight="20.0" prefWidth="110.0" text="Off" textFill="GREY" toggleGroup="$toggle" />
+   </children>
+</VBox>
